@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90911386316",
+    "project_id": "intellichat-91d16",
+    "storage_bucket": "intellichat-91d16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90911386316:android:00984fe912d59fa2df7069",
+        "android_client_info": {
+          "package_name": "com.example.chatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSfoCeCP9ExWyKH4pYYjfiyadSWaehe4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

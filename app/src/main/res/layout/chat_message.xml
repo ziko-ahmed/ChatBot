@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:id="@+id/left_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_80sdp"
+        android:background="@drawable/msg_bot"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/left_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF0038FF"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/msg_we"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/right_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fdf"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

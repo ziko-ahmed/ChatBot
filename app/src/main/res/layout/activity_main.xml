@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    tools:context=".MainActivity"
+    android:paddingHorizontal="@dimen/_8sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:background="@drawable/home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/app_name_logOut">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp"
+                android:text="Hi,"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_28sdp"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_28sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="Welcome to IntelliChat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/app_name_logOut"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/message_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="@string/enter_your_message"
+                android:background="@drawable/message_box"
+                android:layout_toLeftOf="@+id/send_btn"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+            <ImageButton
+                android:id="@+id/send_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/send"
+                android:src="@drawable/baseline_send_24"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

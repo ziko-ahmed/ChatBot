@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IntelliChat</string>
+    <string name="enter_your_message">Enter your Message...</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_login_now">Already have an account, Login Now</string>
+    <string name="register_now">Register Now</string>
+    <string name="already_registered_login">Already Registered, LogIn</string>
+    <string name="hello_world">Hello World</string>
+    <string name="username">Name - </string>
+    <string name="userEmail">Email - </string>
+    <string name="phone_Number">Phone Number -</string>
+    <string name="logout">LogOut</string>
+</resources>
