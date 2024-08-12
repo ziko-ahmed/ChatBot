@@ -73,40 +73,6 @@ public class MainActivity extends AppCompatActivity {
         backPressedTime = System.currentTimeMillis();
     }
 
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        // Save the state when the app is exited
-//        saveState();
-//    }
-//
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        // Restore the state when the app starts
-//        restoreState();
-//    }
-//
-//    private void saveName(String name) {
-//        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putString(KEY_NAME, name);
-//        editor.apply();
-//    }
-//
-//    private String getName() {
-//        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-//        return sharedPreferences.getString(KEY_NAME, null);
-//    }
-//
-//    private void saveState() {
-//        // Save any other necessary state here
-//    }
-//
-//    private void restoreState() {
-//        // Restore any other necessary state here
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String name = getIntent().getStringExtra("name");
-//        saveName(name);
-
-//        String savedName = getName();
-//        if (savedName != null) {
-//            userName.setText(savedName);
-//        }
 
         LinearLayout app_name_logOut = findViewById(R.id.app_name_logOut);
 
@@ -200,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer your-api-key")
                 .post(body)
                 .build();
 
